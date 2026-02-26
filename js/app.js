@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
   const email = form.querySelector("input[type='email']").value.trim();
   
   if (name === "" || email === "") {
-    alert("⚠️ Complete todos los campos");
+    alert(" Complete todos los campos");
     return;
   }
   
@@ -32,14 +32,14 @@ form.addEventListener("submit", (e) => {
     return;
   }
   
-  alert("✅ Mensaje enviado correctamente");
+  alert("Mensaje enviado correctamente");
   form.reset();
 });
 
 const ctaBtn = document.querySelector(".cta-btn");
 
 ctaBtn.addEventListener("click", () => {
-  alert("🚀 Gracias por tu interés en nuestro producto");
+  alert(" Gracias por tu interés en nuestro producto");
 });
 
 const sections = document.querySelectorAll("section");
