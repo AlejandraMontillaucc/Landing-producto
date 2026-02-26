@@ -1,7 +1,4 @@
-/* ===============================
-   RESET GENERAL
-================================= */
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -9,253 +6,148 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f9fafc;
-    color: #111827;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* ===============================
-   VARIABLES
-================================= */
 
-:root {
-    --primary: #4f46e5;
-    --secondary: #6366f1;
-    --dark: #111827;
-    --light: #ffffff;
-    --gray: #6b7280;
+/* NAVBAR */
+.header {
+    background: #111;
+    color: white;
+    padding: 15px;
 }
 
-/* ===============================
-   HEADER
-================================= */
-
-header {
-    background: var(--light);
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h1 {
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-nav ul {
-    display: flex;
+.nav-menu {
     list-style: none;
-    gap: 2rem;
+    display: flex;
+    gap: 20px;
 }
 
-nav a {
+.nav-menu a {
+    color: white;
     text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-    transition: 0.3s ease;
 }
 
-nav a:hover {
-    color: var(--primary);
+.menu-btn {
+    display: none;
 }
 
-/* ===============================
-   HERO
-================================= */
 
-#hero {
+/* HERO */
+.hero {
     text-align: center;
-    padding: 6rem 2rem;
-    background: linear-gradient(to right, #eef2ff, #f8f9fc);
+    padding: 80px 20px;
+    background: #f4f4f4;
 }
 
-#hero h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-#hero p {
-    max-width: 600px;
-    margin: auto;
-    color: var(--gray);
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
-#hero button {
-    background: var(--primary);
-    color: white;
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
     border: none;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-#hero button:hover {
-    background: var(--secondary);
-    transform: translateY(-3px);
-}
-
-/* ===============================
-   BENEFICIOS
-================================= */
-
-#beneficios {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#beneficios h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-#beneficios article {
-    background: var(--light);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-}
-
-#beneficios article h3 {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-#beneficios article p {
-    color: var(--gray);
-}
-
-#beneficios article:hover {
-    transform: translateY(-6px);
-}
-
-/* ===============================
-   CARACTERISTICAS
-================================= */
-
-#caracteristicas {
-    padding: 4rem 2rem;
-    background: #eef2ff;
-    text-align: center;
-}
-
-#caracteristicas h2 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-/* ===============================
-   TESTIMONIOS
-================================= */
-
-#testimonios {
-    padding: 4rem 2rem;
-    background: var(--dark);
+    background: black;
     color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
     text-align: center;
 }
 
-#testimonios h2 {
-    font-weight: 600;
+
+/* BENEFICIOS */
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-#testimonios article {
-    margin-top: 2rem;
-    font-style: italic;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
+.beneficio {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Animación */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+
+/* TESTIMONIOS */
+.testimonio {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* ===============================
-   CONTACTO
-================================= */
 
-#contacto {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
+/* FORM */
 form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
+    gap: 10px;
+    max-width: 400px;
     margin: auto;
 }
 
-input, textarea {
-    padding: 0.8rem;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-family: 'Inter', sans-serif;
-}
-
+input,
+textarea,
 button {
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    padding: 10px;
 }
 
-button:hover {
-    background: var(--secondary);
-}
 
-/* ===============================
-   FOOTER
-================================= */
-
-footer {
-    background: var(--dark);
+/* FOOTER */
+.footer {
+    background: black;
     color: white;
     text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
+    padding: 20px;
 }
 
-/* ===============================
-   RESPONSIVE
-================================= */
 
-@media (min-width: 768px) {
+/* ANIMACIONES SCROLL */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
 
-    #beneficios {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        text-align: left;
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
     }
 
-    #beneficios h2 {
-        grid-column: 1 / -1;
-        text-align: center;
+    .nav-menu {
+        display: none;
+        flex-direction: column;
     }
 
-    #hero h2 {
-        font-size: 3.5rem;
+    .nav-menu.active {
+        display: flex;
     }
+
 }
