@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
 }
 
-
+/* CONTENEDOR */
 /* NAVBAR */
 .header {
     background: #111;
@@ -149,5 +149,5 @@ section.show {
     .nav-menu.active {
         display: flex;
     }
-
+ 
 }
